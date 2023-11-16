@@ -1,0 +1,180 @@
+---
+title: "Solucionario de Controles"
+format: html
+editor: visual
+jupyter: julia-1.9
+---
+
+## Capítulo 20 RWJ
+
+### Pregunta 1
+
+Para las dos empresas analizadas (ZeroQ y Osoji), ¿cuál/es podemos decir que son casos de subvaluación en su apertura con la información de la nota en Diario Financiero?:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Osoji",
+"ZeroQ",
+"Ambas"
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   Posibles razones para considerar que **Osoji podría ser un caso de subvaluación** :\
+
+    1.  ***Valoración Inicia***l: Con una valoración de US\$ 1,8 millones, algunos inversores podrían considerar que la empresa está subvaluada, especialmente si comparan esta valoración con su posición en el mercado y su visión regional de expansión.
+
+    2\. ***Proyección***: La intención de Osoji de expandirse en México y Estados Unidos podría representar un potencial de crecimiento significativo. Los inversores podrían ver esta expansión como una oportunidad de aumentar su valor.
+
+-   Posibles razones para considerar que **ZeroQ podría ser un caso de subvaluación**:\
+
+    1.  ***Planes de Uso de Recursos***: La empresa planea utilizar los recursos para el crecimiento en Chile y la expansión en mercados de Perú y Colombia. Los inversores podrían ver esto como una oportunidad de crecimiento significativo, lo que podría indicar que la valoración actual es baja.
+
+    2\. ***Potencial de Mercado***: Dado que ZeroQ utiliza inteligencia artificial para reducir los tiempos de espera en la atención al público, el mercado potencial podría ser considerable. Invertir en su expansión regional podría ofrecer rendimientos atractivos.\
+
+-   Por lo anterior, Osoji y ZeroQ corresponden a un caso de sublimación
+:::
+
+## Capítulo 20 RWJ
+
+### Pregunta 2
+
+¿Qué ganancias o mejoras ADICIONALES a la financiera tuvo Osoji con la apertura en Bolsa?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Procedimientos",
+"Mecanica de Control",
+"Transparencia",
+"Plan Comercial",
+"Procedimiento, Mecanica de control interno y Transparencia"
+]
+  answ = 5
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+La apertura de Osoji en la bolsa de valores proporciona ventajas clave para sus procedimientos operativos. Al tener acceso constante a capital mediante la emisión de acciones, la empresa puede financiar proyectos significativos, como la expansión de productos y la adopción de nuevas tecnologías. Además, la cotización en bolsa ofrece una ***valuación transparente,*** facilitando ***decisiones estratégicas y participación en fusiones y adquisiciones***. La liquidez de las acciones en el mercado secundario mejora ***la eficiencia en procedimientos como la compensación de empleados y la gestión de la propiedad***. Estas ventajas, combinadas con el cumplimiento de regulaciones y la atracción de inversores institucionales, posicionan a Osoji para un crecimiento sostenible.
+
+-   Es por lo anterior que se considera como respuesta correcta : Procedimiento, Mecanica de Control y Transparencia.
+
+-   En este caso, el plan comercial puede no necesariamente ser una ganancia o mejora, por ejemplo :\
+    **Objetivos de Recaudación No Cumplidos**: Aunque la empresa tiene una valoración inicial de US\$ 1,8 millones y busca recaudar alrededor de 3,6 millones de dólares, puede ser que la recaudación no alcance las expectativas. Si la empresa no logra captar la cantidad prevista, podría afectar su capacidad para financiar planes de expansión y mejorar su posición financiera.\
+    \
+    Es importante señalar que el éxito en el mercado bursátil a corto plazo no siempre se traduce en un rendimiento sostenible. La situación financiera y el rendimiento de una empresa en bolsa pueden estar sujetos a una serie de factores que evolucionan con el tiempo.
+:::
+
+#### 
+
+## Capítulo 21 RWJ
+
+### Pregunta 2
+
+¿Cuál de las siguientes características, corresponde a un arrendamiento financiero?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+
+"Este tipo de arrendamiento no proporciona una alternativa de financiamiento para comprar",
+"El arrendatario no tiene el derecho de renovar el arrendatario",
+"Se amortizan totalmente",
+"Prevén que el arrendador se responsabilice del mantenimiento o servicio",
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   ***"El hecho de que el arrendador se responsabilice del mantenimiento o servicio"NO sería una característica típica del arrendamiento financiero***. En un arrendamiento financiero, el arrendatario generalmente asume la responsabilidad por el mantenimiento y los servicios asociados con el activo arrendado. Esto es parte de la idea de que, a pesar de no ser el propietario legal del activo, el arrendatario asume riesgos y beneficios similares a la propiedad durante la duración del contrato.
+
+    En contraste, en un arrendamiento operativo, que es más similar a un alquiler, el arrendador puede retener la responsabilidad del mantenimiento y los servicios asociados con el activo. **Esta caracteristica sería más característica de un arrendamiento operativo que de un arrendamiento financiero.**
+
+-   ***"Este tipo de arrendamiento no proporciona una alternativa de financiamiento para comprar"*** no es una característica precisa del arrendamiento financiero, ya que este tipo de arrendamiento sí ofrece una alternativa de financiamiento para comprar el activo al final del contrato. Es posible que la afirmación se refiera más a un arrendamiento operativo, donde la opción de compra generalmente no está presente de manera predeterminada.
+
+-   "***La amortización total "es una característica clave de un arrendamiento financiero.*** En este tipo de acuerdo, el arrendatario asume la responsabilidad de la amortización del activo, es decir, que los pagos de arrendamiento incluyen una porción destinada a la reducción gradual del pasivo asociado con el activo arrendado. Esta característica refleja el reconocimiento del uso del activo con el tiempo y su incorporación al balance del arrendatario como propiedad.
+
+-   ***"La incapacidad del arrendatario para renovar el arrendamiento"*** ***NO*** **es indispensable** en un contrato de arrendamiento financiero. Esta posibilidad depende de los términos específicos del contrato. En algunos casos de arrendamiento financiero, la falta de derecho a renovación podría ser una característica si el contrato establece que al final del período acordado, el arrendatario no puede extender el arrendamiento y adquiere la propiedad total del activo, aunque esto varía según la negociación entre las partes.
+:::
+
+## Capítulo 27 RWJ
+
+### Pregunta 1
+
+"Con un sistema de cuentas de saldo cero, la empresa, en colaboración con su banco, mantiene una cuenta maestra y un conjunto de subcuentas. Cuando es necesario pagar un cheque girado sobre una de las subcuentas, los fondos necesarios se transfieren de la cuenta maestra."
+
+La siguiente afirmación, corresponde a un método para administrar de manera eficiente el proceso de desembolso.
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+
+"Verdadero",
+"Falso",
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   ***Es verdadero***, ya que la frase describe un método eficiente de gestionar el proceso de desembolso mediante un sistema de cuentas de saldo cero. En este enfoque colaborativo entre la empresa y su banco, mantiene una cuenta maestra y un conjunto de subcuentas. Este método de administración de cuentas de saldo cero ayuda a optimizar el uso de los fondos, ya que garantiza que cada subcuenta solo tenga los fondos necesarios en el momento preciso del pago, evitando excesos de efectivo innecesarios y mejorando la eficiencia en la gestión financiera.
+:::
+
+## Capítulo 27 RWJ
+
+### Pregunta 2
+
+Usted tiene una partida de transito de 137 por 13 días. Suponiendo que el mes tiene 30 días. ¿Cuál es el promedio diario de las partidas en tránsito? (Respuesta no debe dar con decimales).
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+
+"11",
+"59",
+"1781",
+"1344"
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   **Datos :**
+
+Partida de transito : 137
+
+Días : 13 dias
+
+Para calcular el promedio diario , debemos multiplicar PT x Dias.
+
+Se obtiene le promedio mensual, por lo que para obtenerlo diario se debe dividir por la cantidad de dias que contiene el mes segun lo mencionado en el enunciado (en este caso 30 días).
+
+**Adjunto el problema resuelto:**
+
+![](Captura%20de%20pantalla%202023-11-12%20111629.png)
+:::
